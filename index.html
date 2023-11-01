@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Mi Angel Tejidos</title>
   </head>
   <body>
@@ -12,12 +16,26 @@
         <div class="logo">
           <img src="/img/Logo Mi angel.jpg" alt="log-info" />
         </div>
+        <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+        <input class="input" type="checkbox" id="toggle-menu" />
         <div class="menu">
           <ul class="nav_links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tejidos</a></li>
-            <li><a href="#">Facilidad de pago</a></li>
-            <li><a href="#">Ingresar</a></li>
+            <li><a href="#" class="navbar-link">Inicio</a></li>
+            <li><a href="#tejidos" class="navbar-link">Tejidos</a></li>
+            <li>
+              <a href="#contacto" class="navbar-link">¿Donde Encontrarme?</a>
+            </li>
+            <li><a href="#ingresar" class="navbar-link">Ingresar</a></li>
+          </ul>
+        </div>
+        <div class="menu-hamburguesa">
+          <ul class="nav_hamburguesa">
+            <li><a href="#" class="navbar-hamburguesa">Inicio</a></li>
+            <li><a href="#" class="navbar-hamburguesa">Tejidos</a></li>
+            <li>
+              <a href="#" class="navbar-hamburguesa">Facilidad de pago</a>
+            </li>
+            <li><a href="#" class="navbar-hamburguesa">Ingresar</a></li>
           </ul>
         </div>
       </nav>
@@ -34,7 +52,7 @@
           </p>
         </div>
       </section>
-      <section class="grid_section">
+      <section class="grid_section" id="tejidos">
         <h2>Una muestra de tejidos realizados en las clases en vivo</h2>
         <div class="grid_container">
           <div class="item"></div>
@@ -47,7 +65,7 @@
           <div class="item"></div>
         </div>
       </section>
-      <section class="mas">
+      <section class="mas" id="contacto">
         <div class="contacto">
           <h2>¿Donde encontrarme?</h2>
           <p>
@@ -87,7 +105,7 @@
           </div>
         </div>
       </section>
-      <section class="pago">
+      <section class="pago" id="pago">
         <h1>Facilidades de pago</h1>
         <p>
           Tenemos diversas facilidades de pago para que puedas estudiar conmigo
@@ -95,25 +113,34 @@
         <div class="pagos">
           <div class="credito">
             <h3>Credito</h3>
-            <img src="/img/Pagos/credito.png" alt="" />
+            <a href="#"><img src="/img/Pagos/credito.png" alt="" /></a>
           </div>
           <div class="debito">
             <h3>Debito</h3>
-            <img src="/img/Pagos/debito.png" alt="" />
+            <a href="#"><img src="/img/Pagos/debito.png" alt="" /></a>
           </div>
           <div class="mercado">
             <h3>Mercado Pago</h3>
-            <img src="/img/Pagos/mercado pago.jpg" alt="" />
+            <a href="#"><img src="/img/Pagos/mercado pago.jpg" alt="" /></a>
           </div>
           <div class="transferencia">
             <h3>Transferencia Bancaria</h3>
-            <img src="/img/Pagos/transferencia.jpg" alt="" />
+            <a href="#"><img src="/img/Pagos/transferencia.jpg" alt="" /></a>
           </div>
         </div>
       </section>
     </main>
   </body>
-  <footer class="footer">
+  <footer class="footer" id="ingresar">
     <h2>¿Todavia no estas tomando mi clase?</h2>
+    <section class="registro">
+      <a class="boton" href="/Register.html"
+        ><input type="button" />Registrarse</a
+      >
+      <p>¿ Ya tienes usuario ?</p>
+      <a class="boton" href="/Login.html"
+        ><input type="button" />Iniciar Sesion</a
+      >
+    </section>
   </footer>
 </html>

@@ -17,6 +17,12 @@
   font-family: var(--font-family);
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
 .navbar {
   display: flex;
   height: 85px;
@@ -26,6 +32,63 @@
   align-items: center;
 }
 
+/* menu hamburguesa */
+
+.menu-hamburguesa {
+  display: none;
+}
+
+.label,
+input {
+  display: none;
+}
+
+.navbar i {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-hamburguesa ul {
+    background: white;
+    width: 100%;
+    height: calc(100vh-85px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+  }
+
+  .menu-hamburguesa {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nav);
+  }
+
+  .nav_hamburguesa li {
+    gap: 2rem;
+    align-items: center;
+    font-family: var(--font-family);
+    color: var(--text);
+  }
+
+  #toggle-menu:checked ~ .navbar-list {
+    display: flex;
+  }
+}
+
+/*menu hamburguesa */
+
 .header .logo img {
   transition: all 0.3s;
   height: 70px;
@@ -34,7 +97,7 @@
   width: 100%;
 }
 
-.header .logo img:hover {
+*.header .logo img:hover {
   transform: scale(1.2);
 }
 
@@ -264,4 +327,29 @@
   height: 100px;
   width: 100px;
   border-radius: 3px;
+}
+
+/*Registro*/
+
+.footer {
+  background-color: var(--backgroun);
+}
+
+.footer h2 {
+  text-align: center;
+  padding: 30px;
+}
+
+.registro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.registro a {
+  color: var(--text);
+  border: 6px solid var(--span);
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
 }
