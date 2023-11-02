@@ -154,6 +154,10 @@
 
 /***********************************************/
 
+.grid_section h2 {
+  padding-top: 20px;
+}
+
 .grid_section {
   display: flex;
   flex-direction: column;
@@ -270,17 +274,17 @@
 
 .Costura img {
   width: 150x;
-  height: 150px;
+  height: 130px;
 }
 
 .Dos.agujas img {
-  width: 150x;
-  height: 150px;
+  width: 130x;
+  height: 130px;
 }
 
 .Crochet img {
-  width: 150x;
-  height: 150px;
+  width: 130x;
+  height: 130px;
 }
 
 /*Pagos*/
@@ -341,4 +345,83 @@
   padding: 5px 10px;
   margin: 5px;
   display: inline-block;
+}
+
+/* media queries */
+
+@media (max-width: 890px) {
+  .grid_container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/*tablet */
+
+@media (max-width: 768px) {
+  .hero_section {
+    text-align: center;
+  }
+  .hero_section-text {
+    padding: 20px;
+  }
+  .grid_container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    height: 400px;
+    width: 400px;
+  }
+  .mapa iframe {
+    width: 400px;
+    height: 400;
+  }
+  .cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* celu */
+@media (max-width: 480px) {
+  .hero_section-text {
+    margin-top: 80px;
+    font-size: 14px;
+  }
+
+  .mas p {
+    max-width: 450px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .cursos img {
+    height: 125px;
+    width: 125px;
+  }
+
+  .pago .pagos h3 {
+    font-size: 12px;
+  }
+
+  .pago .pagos img {
+    height: 80px;
+    width: 80px;
+    border-radius: 3px;
+  }
+
+  .footer p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .mapa iframe {
+    width: 300px;
+    height: 300px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
 }
