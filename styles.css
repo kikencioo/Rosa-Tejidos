@@ -425,3 +425,43 @@
     font-size: 13px;
   }
 }
+
+@media (max-width: 315px) {
+  .hero_section-text {
+    margin-top: 200px;
+    font-size: 3px;
+  }
+
+  .hero_section-text h1 {
+    font-size: 30px;
+  }
+
+  .hero_section p {
+    font-size: 13px;
+    margin-bottom: 220px;
+  }
+
+  .grid_container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    width: 200px;
+  }
+
+  .mapa iframe {
+    width: 250px;
+    height: 250px;
+  }
+
+  .pago .pagos img {
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+  }
+
+  .pago .pagos h3 {
+    font-size: 10px;
+  }
+
+  .footer a {
+    font-size: 8px;
+  }
+}
