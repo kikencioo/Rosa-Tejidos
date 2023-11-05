@@ -347,6 +347,14 @@
   display: inline-block;
 }
 
+.boton {
+  border-radius: 20px;
+}
+
+input {
+  display: none;
+}
+
 /* media queries */
 
 @media (max-width: 890px) {
@@ -419,6 +427,10 @@
   .mapa iframe {
     width: 300px;
     height: 300px;
+  }
+
+  .cursos {
+    padding: 50px 0px;
   }
 
   .footer p {
