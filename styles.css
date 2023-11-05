@@ -341,7 +341,7 @@
 
 .registro a {
   color: var(--text);
-  border: 6px solid var(--span);
+  border: 2px solid var(--span);
   padding: 5px 10px;
   margin: 5px;
   display: inline-block;
